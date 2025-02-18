@@ -80,6 +80,9 @@ h1, h2, h3, p, img, video {
   justify-content: center;
   align-items: end;
 }
+.soc-med-container a{
+  color: rgb(255, 255, 255);
+}
 .soc-med-container svg{
   width: 3rem;
   height: 3rem;
