@@ -80,7 +80,7 @@ h1, h2, h3, p, img, video {
   justify-content: center;
   align-items: end;
 }
-.soc-med-container a{
+.soc-med-container a svg{
   color: rgb(255, 255, 255);
 }
 .soc-med-container svg{
@@ -198,7 +198,7 @@ button a{
 
 
 }
-.card-letter{
+.card-letter {
   position: relative; 
   display: flex;
   align-items: center;
@@ -209,17 +209,42 @@ button a{
   border: 2px solid var(--color-accent);
   border-radius: 1rem;
   transition: 0.5s ease-in-out;
-
 }
-.card-letter:hover{
+
+.card-letter .letter {
+  transition: opacity 0.3s ease;
+  font-size: 2rem;
+}
+
+.card-letter .goto-span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 5rem;
+}
+
+.card-letter:hover {
   background-color: rgba(255, 109, 36, .5);
   color: #000000;
 }
+
+.card-letter:hover .letter {
+  opacity: 0;
+}
+
+.card-letter:hover .goto-span {
+  opacity: 1;
+  visibility: visible;
+}
+
 .card-letter p{
   position: absolute; 
   transform: rotate(90deg) scale(1.5);
   font-family: var(--ff-accent);
-  font-size: 20rem;
+  
   white-space: nowrap;
 
 }
