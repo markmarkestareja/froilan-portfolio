@@ -223,23 +223,39 @@ button a{
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  font-size: 5rem;
+  font-size: 2rem;
+}
+.goto-span a{
+  color: #f4f4f4;
 }
 
-.card-letter:hover {
-  background-color: rgba(255, 109, 36, .5);
-  color: #000000;
-}
+
+
 
 .card-letter:hover .letter {
   opacity: 0;
+  /* background-color: rgba(255, 109, 36, .5); */
+  color: #ffffff;
+  z-index: -1;
 }
 
 .card-letter:hover .goto-span {
   opacity: 1;
   visibility: visible;
 }
-
+.goto-span:hover{
+  color: #FF6D24;
+}
+.goto-span a:hover{
+  color: #FF6D24;
+ 
+}
+.goto-span:active{
+  color: #ff9b69;
+}
+.goto-span a:active{
+  color: #ff9b69;
+}
 .card-letter p{
   position: absolute; 
   transform: rotate(90deg) scale(1.5);
@@ -452,6 +468,9 @@ textarea {
     }
     .about-card{
       padding: 10rem 0;
+    }
+    .soc-med-container{
+      display: none;
     }
 }
 
